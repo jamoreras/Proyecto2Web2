@@ -15,7 +15,7 @@ const bodyParse = require("body-parser");
 const app = express();
 dbConnect();
 
-const port = 5000;
+const port = 4000;
 
 
 app.use(cors());

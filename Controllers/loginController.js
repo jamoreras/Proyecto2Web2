@@ -17,12 +17,13 @@ router.post('/login', async (req, res) => {
         console.log(password);
 
         if (password === data.password) {
-            const userD = {
+            const userId = {
                 id: data._id,
+                name:data.firstname,
                 role: data.role 
             };
-            const token = jwt.sign(userD, "123456");
-            return res.status(200).json({ token, userD });
+            const token = jwt.sign(userId, "123456");
+            return res.status(200).json({ token, userId });
         } else {
             return res.status(200).json({ message: "Datos Incorrectos" })
         }

@@ -8,7 +8,7 @@ const categoryM = require('../Models/categoryModel.js');
 
 //Post to create a newsSource
 router.post('/newsSource', (req, res) => {
-
+    
     const source = new newsSource.model(req.body);
     source.save((error) => {
         if (error) {
