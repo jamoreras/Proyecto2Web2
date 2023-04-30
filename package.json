@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "Marlon Tellez",
+  "author": "Jorge Morera",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -19,6 +19,7 @@
     "nodemailer": "^6.9.1",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nodemon": "^2.0.20",
+    "rss-parser": "^3.13.0",
     "twilio": "^4.10.0"
   }
 }

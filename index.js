@@ -6,6 +6,8 @@ const newsSourceRoutes = require('./Controllers/newsSourceController');
 const newsRoutes = require('./Controllers/newsController');
 const categoryRoutes = require('./Controllers/categoryController');
 const loginRoutes = require('./Controllers/loginController');
+const passles = require('./Controllers/pass');
+
 const jwt = require('jsonwebtoken');
 
 const { dbConnect } = require('./configMongo');
@@ -20,7 +22,7 @@ const port = 4000;
 
 app.use(cors());
 app.use(bodyParse.json());
-
+app.use('/api',passles)
 app.use('/api', loginRoutes);
 app.use('/api', userRoutes);
 
