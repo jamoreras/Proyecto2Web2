@@ -6,8 +6,8 @@ const userModel = require('../Models/userModel');
 const jwt = require('jsonwebtoken');
 const twilio = require('twilio');
 
-const accountSid = 'A';
-const authToken = 'e';
+const accountSid = '';
+const authToken = '';
 const client = new twilio(accountSid, authToken);
 
 router.post('/login', async (req, res) => {

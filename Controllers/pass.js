@@ -36,10 +36,10 @@ router.post('/passwor', async (req, res) => {
         });
   
         const mailOptions = {
-          from: 'xxxxx',
+          from: 'Admin',
           to: correo,
-          subject: 'xxx',
-          text: `x ${nombre}, xxxxxxxxxxxxx :http://localhost:3000/passwordless?data=${data}`
+          subject: 'Logeo Passwordless',
+          text: `Dear ${nombre}, click the link to access to your account :http://localhost:3000/passwordless?data=${data}`
         };
   
         transporter.sendMail(mailOptions, (error, info) => {
